@@ -8,4 +8,3 @@ cv2.imshow("ima", img)
 cv2.waitKey(0)
 
 
-# TODO: agakgae

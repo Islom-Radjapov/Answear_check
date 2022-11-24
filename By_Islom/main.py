@@ -1,6 +1,6 @@
 import cv2
 import numpy as np
-import utlis
+from By_Islom import utlis
 
 ########################################################################
 webCamFeed = True

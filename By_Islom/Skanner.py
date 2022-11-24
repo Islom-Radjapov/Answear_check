@@ -37,9 +37,9 @@ cv2.drawContours(imgContours, contours, -1, (0, 255, 0), 10) # DRAW ALL DETECTED
 # FIND THE BIGGEST COUNTOUR
 biggest, maxArea = utilis_doc.biggestContour(contours) # FIND THE BIGGEST CONTOUR
 if biggest.size != 0:
-    biggest=utilis_doc.reorder(biggest)
+    biggest= utilis_doc.reorder(biggest)
     cv2.drawContours(imgBigContour, biggest, -1, (0, 255, 0), 20) # DRAW THE BIGGEST CONTOUR
-    imgBigContour = utilis_doc.drawRectangle(imgBigContour,biggest,2)
+    imgBigContour = utilis_doc.drawRectangle(imgBigContour, biggest, 2)
     pts1 = np.float32(biggest) # PREPARE POINTS FOR WARP
     # pts2 = np.float32([[0, 0],[widthImg, 0], [0, heightImg],[widthImg, heightImg]]) # PREPARE POINTS FOR WARP
     # matrix = cv2.getPerspectiveTransform(pts1, pts2)
