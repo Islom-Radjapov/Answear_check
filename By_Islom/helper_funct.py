@@ -15,7 +15,6 @@ lowThreshold = cv2.getTrackbarPos('Threshold1', 'parameters')
 highThreshold = cv2.getTrackbarPos('Threshold2', 'parameters')
 font = cv2.FONT_HERSHEY_SIMPLEX
 
-
 def drawRectangle(img, a, b, c, d):
     sub_img = img[b:b + d, a:a + c]
     edges = cv2.Canny(sub_img, lowThreshold, highThreshold)
